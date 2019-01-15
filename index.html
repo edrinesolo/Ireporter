@@ -4,14 +4,12 @@
 <title>IReporter</title>
 <link href="static/css/style.css" rel="stylesheet" type="text/css" />
 
-<script src="SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="static/js/gen_validation.js" type="text/javascript"></script>
 <link href="SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css">
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <style type="text/css">
-<!--
-.style8 {font-size: 24px}
-.style9 {font-size: 95%; font-weight: bold; color: #003300; font-family: Verdana, Arial, Helvetica, sans-serif; }
--->
+
+
 </style>
 </head>
 <body>
@@ -25,17 +23,14 @@
     <ul id="navCircle">
       <li><a class="active" href="index.html">Home</a></li>
       
-      <li><a href="report.html">Report</a></li>
-      <li><a href="#">My Incidences</a></li>
-      
- <li><a href="Register.html">Register</a></li>
+      <li><a href="Register.html">Register</a></li>
       
     </ul>
   </div>
   
   <div id="content">
     <h2><span style="color:#003300"> Welcome to IREPORTER</span></h2>
-    <p align="justify"><span class="style8">C</span>orruption is a huge bane to Africa's development. African countries must develop novel and localised solutions that will curb this menace, hence the birth of iReporter. 
+    <p align="justify">Corruption is a huge bane to Africa's development. African countries must develop novel and localised solutions that will curb this menace, hence the birth of iReporter. 
                 
     <p align="justify">iReporter gives a platform to every citizen to bring any form of corruption to the notice of appropriate authorities and the general public. Users can also report on things that needs government intervention</br /></p>    <table width="100%" border="0" cellspacing="3" cellpadding="3">
       <tr>
@@ -51,49 +46,44 @@
   <div id="right-col">
     <h2>Login</h2>
     <div class="scroll">
-      <form name="form1" method="post" action="login.php">
+      <form name="form1" method="post" action="view-all-records.html">
         <table width="100%" border="0" cellspacing="0" cellpadding="0">
           <tr>
             <td height="26">User Name:</td>
           </tr>
           <tr>
-          <td height="30"><span id="sprytextfield1">
-            <label>
-            <input type="text" name="txtUserName" id="txtUserName" />
-            </label>
-            <span class="textfieldRequiredMsg">A value is required.</span></span></td>
+            <td height="30"><span id="sprytextfield1">
+              <label>
+                <input required type="text" name="txtUserName" id="txtUserName" />
+              </label>
+            </span></td>
           </tr>
           <tr>
             <td height="26">Password:</td>
           </tr>
           <tr>
             <td height="31"><span id="sprytextfield2">
-          <label>
-              <input type="password" name="txtPassword" id="txtPassword">
+              <label>
+                <input required type="password" name="txtPassword" id="txtPassword">
               </label>
-            <span class="textfieldRequiredMsg">*</span></span></td>
+            </span></td>
           </tr>
-          <tr>
-            <td height="29">User Type:</td>
-          </tr>
-          <tr>
-            <td height="52"><p>
-              <label>
-                <input type="radio" name="rdType" value="Admin" id="rdType_0">
-                Admin</label>
-              <br>
-              <label>
-                <input type="radio" name="rdType" value="Customer" id="rdType_1">
-                Citzen</label>
-              <br>
-            </p></td>
-          </tr>
+          
           <tr>
             <td><label>
               <div align="center">
-                <input type="submit" name="button" id="button" value="Login">
-                </div>
+              
+                <input class="btn-submit" type="submit" value="Login">
+              </div>
             </label></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="adminlogin.html">login as an admin</a>
+            </td>
           </tr>
           <tr>
             <td>&nbsp;</td>
@@ -112,11 +102,6 @@
   <div id="footer">  &copy; 2018IReport| Design by Sabaalo Solomon</div>
 </div>
 
- <script type="text/javascript">
-<!--
-var sprytextfield2 = new Spry.Widget.ValidationTextField("sprytextfield2");
-var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1");
-//-->
-</script>
+
 </body>
 </html>

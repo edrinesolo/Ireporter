@@ -23,9 +23,9 @@
   </div>
   
   <div id="content">
-    <h2><span style="color:#003300">New User Registration</span></h2>
+    <h2><span style="color:#003300">Admin Login</span></h2>
     
-    <form action="report.html" method="post" onSubmit="return validateForm(this,arrFormValidation);" enctype="multipart/form-data" name="form2" id="form2">
+    <form action="admin_dash.html" method="post" onSubmit="return validateForm(this,arrFormValidation);" enctype="multipart/form-data" name="form2" id="form2">
       <table width="100%" border="0" cellspacing="0" cellpadding="0">
         <tr>
           <td height="28"><div align="left">User Name:</div></td>
@@ -35,48 +35,7 @@
             </label>
           </span></td>
         </tr>
-        <tr>
-          <td height="69"><div align="left">Address:</div></td>
-          <td><span id="sprytextarea1">
-            <label>
-            	<textarea required name="txtAddress" id="txtAddress" cols="35" rows="3"></textarea>
-            </label>
-          </span></td>
-        </tr>
         
-        <tr>
-          <td height="29">Email Adress:</td>
-          <td><span id="sprytextfield4">
-            <label>
-            <input required type="text" name="txtEmail" id="txtEmail" />
-            </label>
-          </span></td>
-        </tr>
-        <tr>
-          <td height="27">Mobile Number:</td>
-          <td><span id="sprytextfield5">
-            <label>
-            <input required type="tel" name="txtMobile" id="txtMobile" />
-            </label>
-          </span></td>
-        </tr>
-        <tr>
-          <td height="29">Gender:</td>
-          <td><label>
-            <select name="rdGender" id="rdGender">
-              <option>Male</option>
-              <option>Female</option>
-            </select>
-          </label></td>
-        </tr>
-        <tr>
-          <td height="29">Birth Date:</td>
-          <td><span id="sprytextfield9">
-            <label>
-            <input required type="date" name="txtDate" id="txtDate" onclick="ds_sh(this);" />
-            </label>
-          </span></td>
-        </tr>
         
         <tr>
           <td height="30">Password:</td>
@@ -89,7 +48,7 @@
         <tr>
           <td>&nbsp;</td>
           <td><label>
-            <input type="submit" name="registerbtn" id="registerbtn" value="Register" />
+            <input type="submit" name="loginbtn2" id="loginbtn2" value="Login" />
           </label></td>
         </tr>
         <tr>
